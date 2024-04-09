@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lakshmi agro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Top Bar -->
+<div class="top-bar">
+    <input type="search" placeholder="Search...">
+    <select name="language" id="language-selector">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <!-- Add more languages as needed -->
+    </select>
+</div>
+
+<header>
+    <div class="container">
+        <img src="/images/logo.png" height="110" width="130">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#aboutUs">About Us</a></li>          
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<banner>
+    <div class="container">
+      <h1>Lakshmi Agro</h1>
+      <p>Trust in Quality, Excellence Delivered</p>
+      <div class="contact-info">
+        <p>Phone: +8830193149</p>
+        <p>  Email: lakshmiagro111@gmail.com</p>
+      </div>
+    </div>
+  </banner>
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="/images/img4.jpg" alt="Image 4"></div>
+      <div class="slide"><img src="/images/img2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="/images/img3.jpg" alt="Image 3"></div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+  </div>
+  
+  
+  <!-- About Us Section -->
+<div id="aboutSection">
+    <h2>About Us</h2>
+    <p>Here you can add some text about your company, its values, mission, and any other information you think is relevant to visitors.</p>
+</div>
+
+<!-- Contact Us Section -->
+<div id="contactSection">
+    <div class="contactInfo">
+        <h2>Contact Us</h2>
+        <p>Address: 1234 Street, City, Country</p>
+        <p>Mobile: +1234567890</p>
+        <p>Email: info@yourdomain.com</p>
+    </div>
+    <div class="contactForm">
+        <h3>Get in Touch</h3>
+        <form action="http://localhost:3000/add-customer" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+            <input type="tel" id="phone" name="phone" placeholder="Phone No" required><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <input type="text" id="product" name="product" placeholder="Product Interested" required><br>
+            <input type="number" id="quantity" name="quantity" placeholder="Quantity" required><br>
+            <input type="text" id="country" name="country" placeholder="Country" required><br>
+            <select id="purchaseTime" name="purchaseTime">
+                <option value="">Time of Purchase</option>
+                <option value="asap">ASAP</option>
+                <option value="thisMonth">This Month</option>
+                <option value="nextMonth">Next Month</option>
+                <option value="thisYear">This Year</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2>Services</h2>
+        <div class="service" id="logistics">
+            <h3>Logistics</h3>
+            <p>Description of logistics service...</p>
+        </div>
+        <div class="service" id="packaging">
+            <h3>Packaging</h3>
+            <p>Description of packaging service...</p>
+        </div>
+        <div class="service" id="labeling">
+            <h3>Labeling</h3>
+            <p>Description of labeling service...</p>
+        </div>
+        <div class="service" id="branding">
+            <h3>Branding</h3>
+            <p>Description of branding service...</p>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products">
+    <div class="container">
+        <h2>Products</h2>
+        <select id="productSelector">
+            <option value="turmeric">Turmeric</option>
+            <option value="turmericPowder">Turmeric Powder</option>
+            <option value="rawTurmeric">Raw Turmeric</option>
+            <!-- Add more product options as needed -->
+        </select>
+    </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script1.js"></script>
+  <script src="app.js"></script>
+  <script src="db.js"></script>
+</body>
+</html>
